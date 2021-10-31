@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:election_exit_poll_07610461/pages/exit_poll.dart';
 void main() {
   runApp(MyApp());
 }
@@ -11,6 +11,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        textTheme: const TextTheme(
+        headline1: TextStyle(
+        fontSize: 20.0,
+        fontWeight: FontWeight.normal,
+          color: Colors.white,
+                  ),
+          bodyText1: TextStyle(fontSize: 20.0,color: Colors.white),
+        ),
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -22,7 +30,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: exitPoll(),
     );
   }
 }
